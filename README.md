@@ -1,2 +1,3 @@
 # javascript
 Exercise
+Hello Github!
