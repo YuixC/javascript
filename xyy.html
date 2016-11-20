@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<script type="text/javascript">
+/*var c=5;
+var t;
+function timedCount()
+{
+	if(c>=0)
+document.getElementById('txt').value="00:"+c
+c=c-1;
+t=setTimeout("timedCount()",1000)
+
+
+}*/
+ 
+<!-- 
+var a=prompt("请输入你的时间：（单位分钟）");
+var maxtime = a*60 //shifenzhong，按秒计算，自己调整! 
+var timer;
+function CountDown(){    
+if(maxtime>=0){    
+　　minutes = Math.floor(maxtime/60);    
+　　seconds = Math.floor(maxtime%60);    
+　　msg = "距离结束还有"+minutes+"分"+seconds+"秒";    
+　　//document.all["timer"].innerHTML=msg;   
+document.getElementById('txt').value=msg;
+　　if(maxtime == 5*60) alert('注意，还有5分钟!');    
+　　　   
+}    
+else{    
+　　clearInterval(timer);    
+　　alert("时间到，结束!");
+window.close()    
+}  
+maxtime=maxtime-1;
+setTimeout("CountDown()",1000); 
+}  
+//setTimeout   在执行时,是在载入后延迟指定时间后,去执行一次表达式,仅执行一次
+//setInterval 在执行时,它从载入后,每隔指定的时间就执行一次表达式
+
+//timer = setInterval("CountDown()",1000);    
+//-->    
+   
+
+
+/*function stopCount()
+{
+c=5;
+setTimeout("document.getElementById('txt').value=5",5);
+clearTimeout(t);
+}*/
+</script>
+</head>
+
+<body>
+
+<form>
+<input type="button" value="开始计时！" onClick="CountDown()">
+<input type="text" id="txt" value="请输入时间">
+</form>
+
+<p>请按照提示输入分钟数，点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时。</p>
+
+
+</body>
+</html>

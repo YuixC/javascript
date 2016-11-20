@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<script type="text/javascript">
+var c=5;
+var t;
+function timedCount()
+{
+document.getElementById('txt').value=c
+c=c-1;
+t=setTimeout("timedCount()",1000)
+
+
+}
+
+
+
+function stopCount()
+{
+c=5;
+setTimeout("document.getElementById('txt').value=5",5);
+clearTimeout(t);
+}
+</script>
+</head>
+
+<body>
+
+<form>
+<input type="button" value="开始计时！" onClick="timedCount()">
+<input type="text" id="txt">
+<input type="button" value="停止计时！" onClick="stopCount()">
+</form>
+
+<p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“停止计时”按钮可以终止计时，并将计数重置为 5。</p>
+
+
+</body>
+</html>
